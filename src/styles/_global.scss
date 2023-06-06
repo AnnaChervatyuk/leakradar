@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/GolosText-Regular.ttf');
+}
+
+// @font-face {
+//   font-family: 'Manrope-Light';
+//   font-style: normal;
+//   font-weight: 500;
+//   src: url('../fonts/Manrope/Manrope-Light.ttf');
+// }
+
+
+html {
+  font-size: 16px;
+  overflow: hidden;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Golos', 'Intel';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--main-color);
+  background-color: var(--main-background-color);
+  width: 100vw;
+  height: 100vh;
+  overflow-x: auto;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  .link-main {
+    color: var(--link-color);
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-color: var(--link-color);
+      transition: all .5s;
+    }
+
+    &:focus,
+    &:active {
+      color: var(--link-color);
+    }
+  }
+
+  .link-black {
+    color: var(---main-color);
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-color: var(--main-color);
+      transition: all .5s;
+    }
+  }
+
+
+  #root {
+    height: 100%;
+    min-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .wrapper {
+      height: 100%;
+    }
+
+  }
+
+
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+
+:focus-visible {
+  outline: none;
+}

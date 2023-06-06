@@ -1,0 +1,111 @@
+.top-panel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-size: 11px;
+  line-height: 110%;
+  align-items: center;
+  margin-bottom: 10px;
+
+  &__logo {
+    &-link {
+      background-image: url('../../../images/logo_leakradar-mob.svg');
+      background-size: contain;
+      height: 30px;
+      width: 40px;
+      min-width: 40px;
+      background-repeat: no-repeat;
+      display: block;
+
+      &:hover {
+        cursor: pointer;
+        transition: all .5s;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0 25px;
+
+    &__item {
+      padding: 3px 10px;
+      text-align: center;
+      border-radius: 10px;
+
+      &:hover {
+        background: var(--black-10);
+        transition: all .5s;
+
+      }
+
+      &.active {
+        background: var(--black-10);
+      }
+    }
+  }
+
+  &__login {
+
+    &__mob {
+      padding: 3px;
+
+      a {
+        background-image: url('../../../images/login_lk.svg');
+        background-size: contain;
+        height: 24px;
+        width: 24px;
+        background-repeat: no-repeat;
+        display: block;
+
+      }
+
+    }
+
+    &__desc {
+      display: none;
+    }
+  }
+}
+
+
+@media (min-width:640px) {
+  .top-panel {
+    &__login {
+      &__mob {
+        display: none;
+      }
+
+      &__desc {
+        display: block;
+      }
+    }
+  }
+
+}
+
+@media (min-width:769px) {
+  .top-panel {
+    font-size: 18px;
+
+    &__logo {
+      &-link {
+        background-image: url('../../../images/logo_leakradar-desc.svg');
+        height: 19px;
+        width: 115px;
+        min-width: 115px;
+      }
+    }
+
+    &__menu {
+      &__item {
+        padding: 5px 10px;
+      }
+    }
+  }
+}

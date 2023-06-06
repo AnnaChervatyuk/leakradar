@@ -1,0 +1,58 @@
+.button {
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 33px;
+  height: fit-content;
+  max-height: 55px;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: var(--black-5);
+    cursor: pointer;
+    transition: all .5s;
+  }
+
+  &.active {
+    background-color: var(--black-10);
+  }
+
+  &.black_btn {
+    background-color: var(--btn-background-color);
+    color: var(--white-100);
+
+    &:hover {
+      background-color: var(--black-100);
+    }
+
+    &.disabled {
+      background-color: var(--black-90);
+    }
+  }
+
+  &.grey_btn {
+    background-color: var(--white-90);
+    color: var(--black-80);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      background-color: var(--black-5);
+
+    }
+  }
+
+
+
+
+}
+
+@media (min-width:769px) {
+  .button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 35px;
+  }
+
+}

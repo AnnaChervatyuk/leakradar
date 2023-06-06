@@ -1,0 +1,155 @@
+  .list_post__inner {
+    .list_post__list {
+      .post_item {
+        margin-bottom: 10px;
+
+        &__link {
+          display: block;
+          text-align: left;
+          background-color: var(--white-100);
+          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+          border-radius: 20px;
+
+          &:hover {
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15), 4px 4px 0px #CCFF00;
+            transition: all .5s;
+          }
+        }
+
+        &__image {
+          border-radius: 20px 20px 0 0;
+          width: 100%;
+        }
+
+        &__descr {
+          padding: 15px;
+        }
+
+
+        &__name {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 150%;
+        }
+
+      }
+    }
+
+
+  }
+
+  .list_post__btn-show-more {
+    width: 335px;
+    margin: 40px auto 85px auto;
+  }
+
+  .post_item-second {
+    background: var(--white-100);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    &:hover {
+      box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15), 4px 4px 0px #CCFF00;
+      transition: all .5s;
+    }
+
+    h3 {
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+
+
+  @media (min-width:640px) {
+    .list_post__inner {
+      .list_post__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+
+        .post_item {
+          &__link {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+
+
+  @media (min-width:769px) {
+    .list_post__inner {
+      .list_post__list {
+        gap: 30px;
+
+        .post_item {
+          margin-bottom: 30px;
+
+          &__descr {
+            padding: 15px 20px;
+          }
+
+
+
+          &__name {
+            font-weight: 600;
+            font-size: 20px;
+          }
+        }
+      }
+
+    }
+
+    .post_item-second {
+      padding: 30px 20px;
+
+      .post_item__link {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+
+        .type {
+          font-size: 14px;
+        }
+
+        img {
+          width: 50%;
+          max-width: 5000px;
+          aspect-ratio: 2/1;
+        }
+
+      }
+    }
+
+  }
+
+
+  @media (min-width: 1024px) {
+    .post_item-second {
+      .post_item__link {
+        justify-content: space-between;
+
+        h3 {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 150%;
+        }
+
+        .post_item-second__descr {
+          flex-grow: 1;
+          max-width: 400px;
+        }
+
+      }
+    }
+  }

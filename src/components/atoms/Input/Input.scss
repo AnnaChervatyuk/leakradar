@@ -1,0 +1,49 @@
+.input {
+  position: relative;
+
+  input {
+    padding: 15px 20px;
+    border: 1px solid var(--black-30);
+    border-radius: 10px;
+    height: 55px;
+
+
+    width: 100%;
+    // color: var(--color-100b);
+    background-color: var(--form-background-color);
+
+    box-sizing: border-box;
+
+    &::placeholder {
+      color: var(--black-30);
+    }
+
+    &:-ms-input-placeholder {
+      color: var(--black-30);
+    }
+
+    &::-ms-input-placeholder {
+      color: var(--black-30);
+    }
+
+
+  }
+
+  &__label {
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    background-color: var(--form-background-color);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: var(--black-50);
+  }
+
+  &__with-label {
+    input {
+      padding-bottom: 8px;
+      padding-top: 23px;
+    }
+  }
+}

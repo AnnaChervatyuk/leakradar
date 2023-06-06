@@ -1,0 +1,69 @@
+:root {
+  --main-color: #000000cc;
+  --main-background-color: #F2F3F3;
+  --main-color-error: rgba(255, 6, 6, 0.8);
+  // --main-color-hover: #4B09D3;
+  // --second-color: #3C07A8;
+  // --second-background-color: #fff;
+  // --add-background-color: #F8F8F8;
+
+  // --button-colored-text: #FFFFFF;
+  // --button-background-color: #FFFFFF;
+  // --button-background-color-hover: #E5D9FF;
+  --form-background-color: #FFFFFF;
+  --btn-background-color: rgba(0, 0, 0, 0.9);
+  --checkcbox-background-color: #F2F3F3;
+
+  --link-color: #7F981A;
+  --black-5: rgba(0, 0, 0, 0.04);
+  --black-10: rgba(0, 0, 0, 0.12);
+  --black-30: rgba(0, 0, 0, 0.3);
+  --black-50: rgba(0, 0, 0, 0.5);
+  --black-80: #000000cc;
+  --black-90: rgba(55, 55, 55, 0.9);
+  --black-100: #000000;
+
+  --white-50: rgba(255, 255, 255, 0.5);
+  --white-90: rgba(255, 255, 255, 0.9);
+  --white-100: #ffffff;
+
+
+  --blue: #361D9E; // --color-30: #925DFE;
+
+  --max-width-desc: 1280px;
+
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  -webkit-appearance: none;
+
+  &-thumb {
+    border-radius: 5px;
+  }
+
+  &-track {
+    background: transparent;
+  }
+
+  &-thumb {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+
+// TODO: move to a separate files
+[data-animation-mode=enabled] {
+  --transition-duration-instant: .075s;
+  --transition-duration-fast: .15s;
+  --transition-duration-medium: .25s;
+  --transition-duration-slow: .35s;
+}
+
+// TODO: disable @mui buttons animation here too
+[data-animation-mode=disabled] {
+  --transition-duration-instant: 0;
+  --transition-duration-fast: 0;
+  --transition-duration-medium: 0;
+  --transition-duration-slow: 0;
+}
