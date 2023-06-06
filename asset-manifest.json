@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/leakradar/static/css/main.8b93f639.css",
+    "main.js": "/leakradar/static/js/main.b68b1b27.js",
+    "static/media/post_image.png": "/leakradar/static/media/post_image.5f55d15595fc7bc6bde1.png",
+    "static/media/campaign_post_2.png": "/leakradar/static/media/campaign_post_2.9e1491c4f9d84c0333e5.png",
+    "static/media/campaign_post_1.png": "/leakradar/static/media/campaign_post_1.7f9257ec4bb7c0ea90fa.png",
+    "static/media/campaign_post_3.png": "/leakradar/static/media/campaign_post_3.27ec1f8b8ada9f10be71.png",
+    "static/media/campaign_post_5.png": "/leakradar/static/media/campaign_post_5.27ec1f8b8ada9f10be71.png",
+    "static/media/check_leak_bg.png": "/leakradar/static/media/check_leak_bg.47f989346514ba357d43.png",
+    "static/media/GolosText-Regular.ttf": "/leakradar/static/media/GolosText-Regular.2815ae554bdfaa756469.ttf",
+    "static/media/campaign_post_4.png": "/leakradar/static/media/campaign_post_4.469282c1d7994c1206c1.png",
+    "static/media/campaign_post_6.png": "/leakradar/static/media/campaign_post_6.469282c1d7994c1206c1.png",
+    "static/media/beeline.png": "/leakradar/static/media/beeline.07c7342a45f5e2afad4a.png",
+    "static/media/mesh.png": "/leakradar/static/media/mesh.4a9e73f7c4d090ed015d.png",
+    "static/media/logo_leakradar-mob.svg": "/leakradar/static/media/logo_leakradar-mob.bd6fbe344e9ea45c41a0.svg",
+    "static/media/logo_leakradar-desc.svg": "/leakradar/static/media/logo_leakradar-desc.dcfad81d4fc1966d4679.svg",
+    "index.html": "/leakradar/index.html",
+    "static/media/login_lk.svg": "/leakradar/static/media/login_lk.75a234f81c5878dba495.svg",
+    "main.8b93f639.css.map": "/leakradar/static/css/main.8b93f639.css.map",
+    "main.b68b1b27.js.map": "/leakradar/static/js/main.b68b1b27.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b93f639.css",
+    "static/js/main.b68b1b27.js"
+  ]
+}
