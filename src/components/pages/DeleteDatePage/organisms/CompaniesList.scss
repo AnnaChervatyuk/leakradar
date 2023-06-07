@@ -1,0 +1,65 @@
+.leak-companies__list {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+
+  .leak-companies__item {
+    padding: 30px 20px 20px;
+    background-color: var(--white-100);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15), 4px 4px 0px #CCFF00;
+      transition: all .5s;
+    }
+
+    .leak-companies__img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 27px;
+    }
+
+    .leak-companies__name {
+      font-size: 14px;
+      color: var(--black-50);
+      margin: 10px;
+    }
+
+  }
+
+}
+
+@media (min-width:640px) {
+  .leak-companies__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
+
+@media (min-width:1280px) {
+  .leak-companies__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    .leak-companies__item {
+      padding: 45px 38px;
+
+      .leak-companies__img {
+        margin-bottom: 40px;
+      }
+
+      .leak-companies__name {
+        font-size: 18px;
+        margin: 15px 20px;
+      }
+    }
+  }
+
+}

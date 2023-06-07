@@ -26,11 +26,15 @@ const CompaniesSlider = () => {
 
   return (
     <div className="companies_slider__wrapper">
-      <Link className="companies_slider__inner" to="/delete_date">
-        {shuffle().map((img, key) => (
-          <img src={require(`${img}`)} alt="logo" className="companies_slider__logo" key={key} />
-        ))}
-      </Link>
+      <div class="tooltip">
+        <span class="tooltiptext">Да, и из этого сервиса данные тоже утекали</span>
+
+        <Link className="companies_slider__inner" to="/deleting_data">
+          {shuffle().map((img, key) => (
+            <img src={require(`${img}`)} alt="logo" className="companies_slider__logo" key={key} />
+          ))}
+        </Link>
+      </div>
     </div>
   );
 };

@@ -35,10 +35,10 @@ const TopPanel = observer(() => {
         })}
       </div>
       <div className="top-panel__login">
-        <ButtonLink url="login" customClass={`top-panel__login__mob ${isLocationPersonal ? 'active' : ''}`} />
+        <ButtonLink url="/login" customClass={`top-panel__login__mob ${isLocationPersonal ? 'active' : ''}`} />
         <ButtonLink
           text="Вход"
-          url="login"
+          url="/login"
           customClass={`top-panel__login__desc ${isLocationPersonal ? 'active' : ''}`}
         />
       </div>

@@ -1,6 +1,16 @@
-@keyframes text {
+@keyframes text_mob {
   0% {
-    transform: translateX(100%);
+    transform: translateX(20%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes text_desc {
+  0% {
+    transform: translateX(30%);
   }
 
   100% {
@@ -10,8 +20,6 @@
 
 .companies_slider__wrapper {
   padding: 38px 0;
-  // animation: text 5s infinite linear;
-  // transform: translateX(100%);
 
   .companies_slider__inner {
     display: flex;
@@ -21,7 +29,7 @@
     margin-left: -15px;
     padding: 2px 0;
     // width: fit-content;
-    animation: text 50s infinite linear;
+    animation: text_mob 50s infinite linear;
 
 
     .companies_slider__logo {
@@ -40,7 +48,13 @@
 }
 
 @media (min-width:769px) {
-  .companies_slider__logo {
-    max-height: 66px;
+  .companies_slider__wrapper {
+    .companies_slider__inner {
+      animation: text_desc 50s infinite linear;
+
+      .companies_slider__logo {
+        max-height: 66px;
+      }
+    }
   }
 }
