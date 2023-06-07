@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/leakradar/static/css/main.8b93f639.css",
-    "main.js": "/leakradar/static/js/main.b68b1b27.js",
+    "main.css": "/leakradar/static/css/main.c9695a76.css",
+    "main.js": "/leakradar/static/js/main.e770bf1d.js",
     "static/media/post_image.png": "/leakradar/static/media/post_image.5f55d15595fc7bc6bde1.png",
     "static/media/campaign_post_2.png": "/leakradar/static/media/campaign_post_2.9e1491c4f9d84c0333e5.png",
     "static/media/campaign_post_1.png": "/leakradar/static/media/campaign_post_1.7f9257ec4bb7c0ea90fa.png",
@@ -17,11 +17,11 @@
     "static/media/logo_leakradar-desc.svg": "/leakradar/static/media/logo_leakradar-desc.dcfad81d4fc1966d4679.svg",
     "index.html": "/leakradar/index.html",
     "static/media/login_lk.svg": "/leakradar/static/media/login_lk.75a234f81c5878dba495.svg",
-    "main.8b93f639.css.map": "/leakradar/static/css/main.8b93f639.css.map",
-    "main.b68b1b27.js.map": "/leakradar/static/js/main.b68b1b27.js.map"
+    "main.c9695a76.css.map": "/leakradar/static/css/main.c9695a76.css.map",
+    "main.e770bf1d.js.map": "/leakradar/static/js/main.e770bf1d.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b93f639.css",
-    "static/js/main.b68b1b27.js"
+    "static/css/main.c9695a76.css",
+    "static/js/main.e770bf1d.js"
   ]
 }
