@@ -63,6 +63,13 @@
         line-height: 150%;
         color: var(--black-80);
       }
+
+      &:hover {
+        img {
+          opacity: 0.8;
+          transition: opacity .5s;
+        }
+      }
     }
   }
 }
@@ -142,10 +149,10 @@
   // }
 }
 
-@media (min-width:1024px) {
+@media (min-width:1280px) {
 
   .slider__wrapper {
-    // padding: 15px 0;
+    margin: 0;
   }
 
   //   margin-bottom: 100px;

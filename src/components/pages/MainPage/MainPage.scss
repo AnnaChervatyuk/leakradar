@@ -40,3 +40,15 @@
     }
   }
 }
+
+
+
+@media (min-width: 1280px) {
+  .main_page {
+    &__inner {
+      &-field {
+        padding: 15px 0 10px;
+      }
+    }
+  }
+}

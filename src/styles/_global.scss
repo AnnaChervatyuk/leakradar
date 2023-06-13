@@ -33,6 +33,10 @@ body {
   height: 100vh;
   overflow-x: auto;
 
+  .hidden {
+    display: none;
+  }
+
   a {
     color: inherit;
 
@@ -67,6 +71,43 @@ body {
     }
   }
 
+  .close_btn {
+
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    opacity: 0.3;
+    width: 40px;
+    height: 40px;
+
+    &:hover {
+      opacity: 0.8;
+      transition: all .5s;
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 23px;
+      height: 3px;
+      top: 18px;
+      right: 8px;
+      background: var(--black-100);
+
+
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+
+  }
 
   #root {
     height: 100%;

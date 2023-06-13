@@ -25,6 +25,108 @@
   }
 }
 
+.company-popup__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white-90);
+  overflow: hidden;
+
+  .company-popup__inner {
+    position: relative;
+    padding: 50px 15px;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    height: 100%;
+    text-align: left;
+    background-color: var(--main-background-color);
+    overflow-y: auto;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.deleting-date-info {
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  &__instruction {
+    padding: 15px;
+    background: var(--form-background-color);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    margin-bottom: 30px;
+
+    &__img {
+      height: auto;
+      width: 192px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__btn-delete {
+    margin-bottom: 50px;
+  }
+
+  &__lawsuit {
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(90deg, rgba(244, 164, 8, 1) 50%, rgba(229, 87, 26, 1) 100%);
+
+    &__img {
+      margin-bottom: 10px;
+      width: 168px;
+    }
+
+    &__inner {
+      width: 100%;
+      height: 100%;
+      padding: 30px;
+      border-radius: 18px;
+      background: var(--form-background-color);
+    }
+
+    &__btn-group {
+      gap: 20px;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__btn-more {
+      border: 1px solid var(--black-80);
+    }
+  }
+}
+
+@media (min-width:750px) {
+  .company-popup__wrapper {
+    overflow-y: auto;
+
+    .company-popup__inner {
+      margin: 50px auto;
+      padding: 50px;
+      height: auto;
+    }
+  }
+
+  .deleting-date-info {
+    &__instruction {
+      padding: 30px;
+    }
+
+    &__lawsuit {
+      &__btn-group {
+        flex-direction: row;
+      }
+    }
+  }
+}
+
 @media (min-width:1280px) {
   .deleting-date_page {
     &__inner {
